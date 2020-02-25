@@ -1,0 +1,11 @@
+<h1>All Students list</h1>
+<br>
+<%= form_for(Student.new, url: new_student_path, method: :get) do |f| %>
+  <%= f.submit "Create New" %>
+<% end %>
+<br>
+<%@students.each { |student|%>
+<p>
+<%= link_to  "#{student.first_name} #{student.last_name}", student_path(student) %>
+</p>
+<%}%>

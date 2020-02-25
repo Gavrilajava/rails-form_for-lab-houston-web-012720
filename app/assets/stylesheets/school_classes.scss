@@ -1,0 +1,48 @@
+// Place all the styles related to the school_classes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 3rem;
+  color: #fff;
+  font-family: "Berkshire Swash", cursive;
+}
+
+
+form {
+  max-width: 40vw;
+  display: flex;
+  flex-direction: column;
+}
+
+a, label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+form label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+form input {
+  border: 2px solid lightslategray;
+  height: 40px;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+form input:focus {
+  outline: none;
+  border: 2px solid darkslategray;
+}

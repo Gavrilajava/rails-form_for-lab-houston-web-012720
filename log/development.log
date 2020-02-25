@@ -46,3 +46,1691 @@ Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
   [1m[35mSQL (0.6ms)[0m  DELETE FROM "students" WHERE "students"."id" = ?  [["id", 2]]
   [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
   [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students"
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateScoolClasses (20200225174014)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "scool_classes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "room_number" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200225174014"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-02-25 17:40:40.550484"], ["updated_at", "2020-02-25 17:40:40.550484"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSchoolClasses (20200225174811)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "school_classes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "room_number" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200225174811"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Rob"], ["last_name", "Gottlieb"], ["created_at", "2020-02-25 17:51:08.584126"], ["updated_at", "2020-02-25 17:51:08.584126"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Janette"], ["last_name", "Turcotte"], ["created_at", "2020-02-25 17:51:08.587746"], ["updated_at", "2020-02-25 17:51:08.587746"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Carter"], ["last_name", "Aufderhar"], ["created_at", "2020-02-25 17:51:08.589820"], ["updated_at", "2020-02-25 17:51:08.589820"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Krystyna"], ["last_name", "Botsford"], ["created_at", "2020-02-25 17:51:08.591966"], ["updated_at", "2020-02-25 17:51:08.591966"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Fe"], ["last_name", "Nienow"], ["created_at", "2020-02-25 17:51:08.593791"], ["updated_at", "2020-02-25 17:51:08.593791"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Tracy"], ["last_name", "Olson"], ["created_at", "2020-02-25 17:51:08.595658"], ["updated_at", "2020-02-25 17:51:08.595658"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Christen"], ["last_name", "Thompson"], ["created_at", "2020-02-25 17:51:08.597324"], ["updated_at", "2020-02-25 17:51:08.597324"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Elroy"], ["last_name", "Feeney"], ["created_at", "2020-02-25 17:51:08.599193"], ["updated_at", "2020-02-25 17:51:08.599193"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Chadwick"], ["last_name", "Koelpin"], ["created_at", "2020-02-25 17:51:08.600877"], ["updated_at", "2020-02-25 17:51:08.600877"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Senaida"], ["last_name", "Jakubowski"], ["created_at", "2020-02-25 17:51:08.602318"], ["updated_at", "2020-02-25 17:51:08.602318"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Buck"], ["last_name", "O'Conner"], ["created_at", "2020-02-25 17:51:08.604296"], ["updated_at", "2020-02-25 17:51:08.604296"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Rolanda"], ["last_name", "Koepp"], ["created_at", "2020-02-25 17:51:08.605988"], ["updated_at", "2020-02-25 17:51:08.605988"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Miquel"], ["last_name", "Collier"], ["created_at", "2020-02-25 17:51:08.607771"], ["updated_at", "2020-02-25 17:51:08.607771"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Erasmo"], ["last_name", "Donnelly"], ["created_at", "2020-02-25 17:51:08.609605"], ["updated_at", "2020-02-25 17:51:08.609605"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Ina"], ["last_name", "Brown"], ["created_at", "2020-02-25 17:51:08.611450"], ["updated_at", "2020-02-25 17:51:08.611450"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Rolando"], ["last_name", "Brown"], ["created_at", "2020-02-25 17:51:08.613802"], ["updated_at", "2020-02-25 17:51:08.613802"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Dewitt"], ["last_name", "Purdy"], ["created_at", "2020-02-25 17:51:08.615620"], ["updated_at", "2020-02-25 17:51:08.615620"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Quintin"], ["last_name", "Spinka"], ["created_at", "2020-02-25 17:51:08.617388"], ["updated_at", "2020-02-25 17:51:08.617388"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Chas"], ["last_name", "Lesch"], ["created_at", "2020-02-25 17:51:08.618921"], ["updated_at", "2020-02-25 17:51:08.618921"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Carolyne"], ["last_name", "Tillman"], ["created_at", "2020-02-25 17:51:08.620506"], ["updated_at", "2020-02-25 17:51:08.620506"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Loren"], ["last_name", "Murazik"], ["created_at", "2020-02-25 17:51:08.622010"], ["updated_at", "2020-02-25 17:51:08.622010"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Leigh"], ["last_name", "Glover"], ["created_at", "2020-02-25 17:51:08.623541"], ["updated_at", "2020-02-25 17:51:08.623541"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Rueben"], ["last_name", "Abshire"], ["created_at", "2020-02-25 17:51:08.625403"], ["updated_at", "2020-02-25 17:51:08.625403"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Candra"], ["last_name", "Predovic"], ["created_at", "2020-02-25 17:51:08.627153"], ["updated_at", "2020-02-25 17:51:08.627153"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Waylon"], ["last_name", "Schroeder"], ["created_at", "2020-02-25 17:51:08.629125"], ["updated_at", "2020-02-25 17:51:08.629125"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Mariette"], ["last_name", "Kulas"], ["created_at", "2020-02-25 17:51:08.630697"], ["updated_at", "2020-02-25 17:51:08.630697"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Sue"], ["last_name", "Bogisich"], ["created_at", "2020-02-25 17:51:08.632522"], ["updated_at", "2020-02-25 17:51:08.632522"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Julee"], ["last_name", "Champlin"], ["created_at", "2020-02-25 17:51:08.634317"], ["updated_at", "2020-02-25 17:51:08.634317"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Elane"], ["last_name", "Gulgowski"], ["created_at", "2020-02-25 17:51:08.636168"], ["updated_at", "2020-02-25 17:51:08.636168"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Carter"], ["last_name", "Breitenberg"], ["created_at", "2020-02-25 17:51:08.637882"], ["updated_at", "2020-02-25 17:51:08.637882"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Hugo"], ["last_name", "Lockman"], ["created_at", "2020-02-25 17:51:08.639670"], ["updated_at", "2020-02-25 17:51:08.639670"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Lucille"], ["last_name", "Smitham"], ["created_at", "2020-02-25 17:51:08.641241"], ["updated_at", "2020-02-25 17:51:08.641241"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Jason"], ["last_name", "Sporer"], ["created_at", "2020-02-25 17:51:08.642976"], ["updated_at", "2020-02-25 17:51:08.642976"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Stephenie"], ["last_name", "Schinner"], ["created_at", "2020-02-25 17:51:08.644895"], ["updated_at", "2020-02-25 17:51:08.644895"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Nicky"], ["last_name", "Fritsch"], ["created_at", "2020-02-25 17:51:08.646531"], ["updated_at", "2020-02-25 17:51:08.646531"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Paris"], ["last_name", "Rowe"], ["created_at", "2020-02-25 17:51:08.648118"], ["updated_at", "2020-02-25 17:51:08.648118"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Xavier"], ["last_name", "Wyman"], ["created_at", "2020-02-25 17:51:08.649803"], ["updated_at", "2020-02-25 17:51:08.649803"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Joann"], ["last_name", "Kohler"], ["created_at", "2020-02-25 17:51:08.651318"], ["updated_at", "2020-02-25 17:51:08.651318"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Marvel"], ["last_name", "McGlynn"], ["created_at", "2020-02-25 17:51:08.653029"], ["updated_at", "2020-02-25 17:51:08.653029"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Lala"], ["last_name", "Baumbach"], ["created_at", "2020-02-25 17:51:08.654458"], ["updated_at", "2020-02-25 17:51:08.654458"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Nidia"], ["last_name", "Bartell"], ["created_at", "2020-02-25 17:51:48.607778"], ["updated_at", "2020-02-25 17:51:48.607778"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Beryl"], ["last_name", "Collins"], ["created_at", "2020-02-25 17:51:48.612182"], ["updated_at", "2020-02-25 17:51:48.612182"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Matilde"], ["last_name", "Harris"], ["created_at", "2020-02-25 17:51:48.614714"], ["updated_at", "2020-02-25 17:51:48.614714"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Rolando"], ["last_name", "Kuvalis"], ["created_at", "2020-02-25 17:51:48.616861"], ["updated_at", "2020-02-25 17:51:48.616861"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Santiago"], ["last_name", "Gusikowski"], ["created_at", "2020-02-25 17:51:48.619032"], ["updated_at", "2020-02-25 17:51:48.619032"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Frankie"], ["last_name", "Murazik"], ["created_at", "2020-02-25 17:51:48.621499"], ["updated_at", "2020-02-25 17:51:48.621499"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Connie"], ["last_name", "Bashirian"], ["created_at", "2020-02-25 17:51:48.623545"], ["updated_at", "2020-02-25 17:51:48.623545"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Shad"], ["last_name", "Huels"], ["created_at", "2020-02-25 17:51:48.625162"], ["updated_at", "2020-02-25 17:51:48.625162"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Shery"], ["last_name", "Corkery"], ["created_at", "2020-02-25 17:51:48.627153"], ["updated_at", "2020-02-25 17:51:48.627153"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Elton"], ["last_name", "Adams"], ["created_at", "2020-02-25 17:51:48.629038"], ["updated_at", "2020-02-25 17:51:48.629038"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Christopher"], ["last_name", "Feeney"], ["created_at", "2020-02-25 17:51:48.631282"], ["updated_at", "2020-02-25 17:51:48.631282"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Felisha"], ["last_name", "Block"], ["created_at", "2020-02-25 17:51:48.633282"], ["updated_at", "2020-02-25 17:51:48.633282"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Gilbert"], ["last_name", "Farrell"], ["created_at", "2020-02-25 17:51:48.635201"], ["updated_at", "2020-02-25 17:51:48.635201"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Bertram"], ["last_name", "Bosco"], ["created_at", "2020-02-25 17:51:48.636894"], ["updated_at", "2020-02-25 17:51:48.636894"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Catheryn"], ["last_name", "Pollich"], ["created_at", "2020-02-25 17:51:48.639415"], ["updated_at", "2020-02-25 17:51:48.639415"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Chadwick"], ["last_name", "Volkman"], ["created_at", "2020-02-25 17:51:48.651552"], ["updated_at", "2020-02-25 17:51:48.651552"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Geraldo"], ["last_name", "Auer"], ["created_at", "2020-02-25 17:51:48.654723"], ["updated_at", "2020-02-25 17:51:48.654723"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Vida"], ["last_name", "Schmitt"], ["created_at", "2020-02-25 17:51:48.658301"], ["updated_at", "2020-02-25 17:51:48.658301"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Jamel"], ["last_name", "Russel"], ["created_at", "2020-02-25 17:51:48.660930"], ["updated_at", "2020-02-25 17:51:48.660930"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Iva"], ["last_name", "Champlin"], ["created_at", "2020-02-25 17:51:48.663726"], ["updated_at", "2020-02-25 17:51:48.663726"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Micki"], ["last_name", "Flatley"], ["created_at", "2020-02-25 17:51:48.666378"], ["updated_at", "2020-02-25 17:51:48.666378"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Dallas"], ["last_name", "Spencer"], ["created_at", "2020-02-25 17:51:48.668487"], ["updated_at", "2020-02-25 17:51:48.668487"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Darcey"], ["last_name", "Lind"], ["created_at", "2020-02-25 17:51:48.670484"], ["updated_at", "2020-02-25 17:51:48.670484"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Owen"], ["last_name", "Lesch"], ["created_at", "2020-02-25 17:51:48.672561"], ["updated_at", "2020-02-25 17:51:48.672561"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Jon"], ["last_name", "Friesen"], ["created_at", "2020-02-25 17:51:48.674451"], ["updated_at", "2020-02-25 17:51:48.674451"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Johnny"], ["last_name", "McKenzie"], ["created_at", "2020-02-25 17:51:48.676560"], ["updated_at", "2020-02-25 17:51:48.676560"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Ferne"], ["last_name", "Harvey"], ["created_at", "2020-02-25 17:51:48.678324"], ["updated_at", "2020-02-25 17:51:48.678324"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Maile"], ["last_name", "Rempel"], ["created_at", "2020-02-25 17:51:48.679808"], ["updated_at", "2020-02-25 17:51:48.679808"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Hank"], ["last_name", "Hackett"], ["created_at", "2020-02-25 17:51:48.681426"], ["updated_at", "2020-02-25 17:51:48.681426"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Alvin"], ["last_name", "Oberbrunner"], ["created_at", "2020-02-25 17:51:48.683374"], ["updated_at", "2020-02-25 17:51:48.683374"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Torrie"], ["last_name", "West"], ["created_at", "2020-02-25 17:51:48.685312"], ["updated_at", "2020-02-25 17:51:48.685312"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Edmundo"], ["last_name", "Cassin"], ["created_at", "2020-02-25 17:51:48.686982"], ["updated_at", "2020-02-25 17:51:48.686982"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Morris"], ["last_name", "Lynch"], ["created_at", "2020-02-25 17:51:48.688545"], ["updated_at", "2020-02-25 17:51:48.688545"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Britteny"], ["last_name", "Vandervort"], ["created_at", "2020-02-25 17:51:48.690109"], ["updated_at", "2020-02-25 17:51:48.690109"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Zola"], ["last_name", "Daniel"], ["created_at", "2020-02-25 17:51:48.691666"], ["updated_at", "2020-02-25 17:51:48.691666"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Adrian"], ["last_name", "Lindgren"], ["created_at", "2020-02-25 17:51:48.693138"], ["updated_at", "2020-02-25 17:51:48.693138"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Forest"], ["last_name", "Wilkinson"], ["created_at", "2020-02-25 17:51:48.694793"], ["updated_at", "2020-02-25 17:51:48.694793"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Herlinda"], ["last_name", "Willms"], ["created_at", "2020-02-25 17:51:48.696493"], ["updated_at", "2020-02-25 17:51:48.696493"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Rex"], ["last_name", "Reinger"], ["created_at", "2020-02-25 17:51:48.698282"], ["updated_at", "2020-02-25 17:51:48.698282"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Madelaine"], ["last_name", "Jerde"], ["created_at", "2020-02-25 17:51:48.699968"], ["updated_at", "2020-02-25 17:51:48.699968"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateStudents (1)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class CreateStudents < ActiveRecord::Migration[4.2] (called from block in execute at /Users/gavrilchik/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273)
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "1"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateSchoolClasses (20200225174811)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "school_classes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "room_number" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200225174811"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-02-25 17:53:33.185123"], ["updated_at", "2020-02-25 17:53:33.185123"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Daine"], ["last_name", "Thompson"], ["created_at", "2020-02-25 17:54:43.212571"], ["updated_at", "2020-02-25 17:54:43.212571"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Claretha"], ["last_name", "Beer"], ["created_at", "2020-02-25 17:54:43.215783"], ["updated_at", "2020-02-25 17:54:43.215783"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Shelby"], ["last_name", "Boehm"], ["created_at", "2020-02-25 17:54:43.217729"], ["updated_at", "2020-02-25 17:54:43.217729"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Raphael"], ["last_name", "Funk"], ["created_at", "2020-02-25 17:54:43.219755"], ["updated_at", "2020-02-25 17:54:43.219755"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Rayford"], ["last_name", "Huel"], ["created_at", "2020-02-25 17:54:43.221431"], ["updated_at", "2020-02-25 17:54:43.221431"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Len"], ["last_name", "Hane"], ["created_at", "2020-02-25 17:54:43.223175"], ["updated_at", "2020-02-25 17:54:43.223175"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Nathanael"], ["last_name", "Langworth"], ["created_at", "2020-02-25 17:54:43.225425"], ["updated_at", "2020-02-25 17:54:43.225425"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Francoise"], ["last_name", "Deckow"], ["created_at", "2020-02-25 17:54:43.227131"], ["updated_at", "2020-02-25 17:54:43.227131"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Charlyn"], ["last_name", "Bauch"], ["created_at", "2020-02-25 17:54:43.228853"], ["updated_at", "2020-02-25 17:54:43.228853"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Shirlene"], ["last_name", "Hoeger"], ["created_at", "2020-02-25 17:54:43.230490"], ["updated_at", "2020-02-25 17:54:43.230490"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Gail"], ["last_name", "Gislason"], ["created_at", "2020-02-25 17:54:43.231989"], ["updated_at", "2020-02-25 17:54:43.231989"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Eldon"], ["last_name", "Wehner"], ["created_at", "2020-02-25 17:54:43.233863"], ["updated_at", "2020-02-25 17:54:43.233863"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Ira"], ["last_name", "Harvey"], ["created_at", "2020-02-25 17:54:43.235651"], ["updated_at", "2020-02-25 17:54:43.235651"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Kyle"], ["last_name", "Walsh"], ["created_at", "2020-02-25 17:54:43.238172"], ["updated_at", "2020-02-25 17:54:43.238172"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Victorina"], ["last_name", "Pagac"], ["created_at", "2020-02-25 17:54:43.239903"], ["updated_at", "2020-02-25 17:54:43.239903"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Demetrius"], ["last_name", "Ebert"], ["created_at", "2020-02-25 17:54:43.250783"], ["updated_at", "2020-02-25 17:54:43.250783"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Roseline"], ["last_name", "Legros"], ["created_at", "2020-02-25 17:54:43.252514"], ["updated_at", "2020-02-25 17:54:43.252514"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Sherry"], ["last_name", "Lindgren"], ["created_at", "2020-02-25 17:54:43.253952"], ["updated_at", "2020-02-25 17:54:43.253952"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Ahmed"], ["last_name", "Ernser"], ["created_at", "2020-02-25 17:54:43.255557"], ["updated_at", "2020-02-25 17:54:43.255557"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Rogelio"], ["last_name", "Lind"], ["created_at", "2020-02-25 17:54:43.257004"], ["updated_at", "2020-02-25 17:54:43.257004"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Adena"], ["last_name", "Quigley"], ["created_at", "2020-02-25 17:54:43.258500"], ["updated_at", "2020-02-25 17:54:43.258500"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Teisha"], ["last_name", "Friesen"], ["created_at", "2020-02-25 17:54:43.260756"], ["updated_at", "2020-02-25 17:54:43.260756"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Markus"], ["last_name", "Brakus"], ["created_at", "2020-02-25 17:54:43.262550"], ["updated_at", "2020-02-25 17:54:43.262550"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Darrell"], ["last_name", "Wyman"], ["created_at", "2020-02-25 17:54:43.264350"], ["updated_at", "2020-02-25 17:54:43.264350"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Criselda"], ["last_name", "Mosciski"], ["created_at", "2020-02-25 17:54:43.266005"], ["updated_at", "2020-02-25 17:54:43.266005"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Zina"], ["last_name", "Lakin"], ["created_at", "2020-02-25 17:54:43.267714"], ["updated_at", "2020-02-25 17:54:43.267714"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Adam"], ["last_name", "Witting"], ["created_at", "2020-02-25 17:54:43.269262"], ["updated_at", "2020-02-25 17:54:43.269262"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Chong"], ["last_name", "Frami"], ["created_at", "2020-02-25 17:54:43.270956"], ["updated_at", "2020-02-25 17:54:43.270956"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Sterling"], ["last_name", "Renner"], ["created_at", "2020-02-25 17:54:43.272928"], ["updated_at", "2020-02-25 17:54:43.272928"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Tandy"], ["last_name", "Grant"], ["created_at", "2020-02-25 17:54:43.274956"], ["updated_at", "2020-02-25 17:54:43.274956"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Louie"], ["last_name", "Vandervort"], ["created_at", "2020-02-25 17:54:43.276521"], ["updated_at", "2020-02-25 17:54:43.276521"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Homer"], ["last_name", "Bartell"], ["created_at", "2020-02-25 17:54:43.278033"], ["updated_at", "2020-02-25 17:54:43.278033"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Lashanda"], ["last_name", "Cronin"], ["created_at", "2020-02-25 17:54:43.279355"], ["updated_at", "2020-02-25 17:54:43.279355"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Randall"], ["last_name", "Schmeler"], ["created_at", "2020-02-25 17:54:43.280953"], ["updated_at", "2020-02-25 17:54:43.280953"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Dean"], ["last_name", "O'Hara"], ["created_at", "2020-02-25 17:54:43.282541"], ["updated_at", "2020-02-25 17:54:43.282541"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Delmar"], ["last_name", "Hilpert"], ["created_at", "2020-02-25 17:54:43.284232"], ["updated_at", "2020-02-25 17:54:43.284232"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Fiona"], ["last_name", "Reichel"], ["created_at", "2020-02-25 17:54:43.285867"], ["updated_at", "2020-02-25 17:54:43.285867"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Juanita"], ["last_name", "Hayes"], ["created_at", "2020-02-25 17:54:43.287374"], ["updated_at", "2020-02-25 17:54:43.287374"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Chi"], ["last_name", "Oberbrunner"], ["created_at", "2020-02-25 17:54:43.288880"], ["updated_at", "2020-02-25 17:54:43.288880"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Roscoe"], ["last_name", "Farrell"], ["created_at", "2020-02-25 17:54:43.290361"], ["updated_at", "2020-02-25 17:54:43.290361"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "school_classes" ("title", "room_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Apple"], ["room_number", 495], ["created_at", "2020-02-25 17:55:04.308404"], ["updated_at", "2020-02-25 17:55:04.308404"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "school_classes" ("title", "room_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Coconut"], ["room_number", 233], ["created_at", "2020-02-25 17:55:04.312085"], ["updated_at", "2020-02-25 17:55:04.312085"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "school_classes" ("title", "room_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Cherry"], ["room_number", 292], ["created_at", "2020-02-25 17:55:04.314100"], ["updated_at", "2020-02-25 17:55:04.314100"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "school_classes" ("title", "room_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Almond"], ["room_number", 108], ["created_at", "2020-02-25 17:55:04.315577"], ["updated_at", "2020-02-25 17:55:04.315577"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "school_classes" ("title", "room_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Caramel"], ["room_number", 315], ["created_at", "2020-02-25 17:55:04.316948"], ["updated_at", "2020-02-25 17:55:04.316948"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "school_classes" ("title", "room_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Peanut Butter"], ["room_number", 75], ["created_at", "2020-02-25 17:55:04.318425"], ["updated_at", "2020-02-25 17:55:04.318425"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "school_classes" ("title", "room_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Funfetti"], ["room_number", 299], ["created_at", "2020-02-25 17:55:04.320050"], ["updated_at", "2020-02-25 17:55:04.320050"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mStudent Load (2.6ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mSchoolClass Load (0.6ms)[0m  [1m[34mSELECT "school_classes".* FROM "school_classes"[0m
+Started GET "/" for ::1 at 2020-02-25 14:27:01 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 17ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2020-02-25 14:27:05 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (8.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"students"} missing required keys: [:id]):
+    1: <h1>All Students list</h1>
+    2: <%@students.each { |student|%>
+    3: <%= link_to  "#{student.first_name} #{student.last_name}", student_path %>
+    4: <%}%>
+  
+app/views/students/index.html.erb:3:in `block in _app_views_students_index_html_erb__2449925654196529296_70177155140180'
+app/views/students/index.html.erb:2:in `_app_views_students_index_html_erb__2449925654196529296_70177155140180'
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.8ms)
+Started GET "/students" for ::1 at 2020-02-25 14:27:32 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 615ms (Views: 613.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students/3" for ::1 at 2020-02-25 14:27:41 -0600
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 52ms (Views: 34.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/students" for ::1 at 2020-02-25 14:29:10 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (2.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 52ms (Views: 48.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/students" for ::1 at 2020-02-25 14:29:30 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 42ms (Views: 40.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2020-02-25 14:29:32 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2020-02-25 14:29:34 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2020-02-25 14:29:57 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2020-02-25 14:29:58 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2020-02-25 14:30:15 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2020-02-25 14:30:41 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students/1" for ::1 at 2020-02-25 14:30:43 -0600
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/students" for ::1 at 2020-02-25 14:32:28 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students/1" for ::1 at 2020-02-25 14:32:30 -0600
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for {:url=>"/students/1/edit", :method=>:get}:Hash):
+    1: <h1>Student Info:</h1>
+    2: <label> Name: <%=@student.first_name%> <%=@student.last_name%></label>
+    3: 
+    4: <%= form_for url: edit_student_path(@student), method: :get do |f| %>
+    5:   <%= f.submit "Edit Student" %>
+    6: <% end %>
+  
+app/views/students/show.html.erb:4:in `_app_views_students_show_html_erb___2612992321174694989_70177128145380'
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.5ms)
+Started GET "/students/1" for ::1 at 2020-02-25 14:33:11 -0600
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/gavrilchik/Development/Flatiron/mod2/labs/Rails/rails-form_for-lab-houston-web-012720/app/views/students/show.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting end
+...  form_with model: @student url: edit_student_path(@student)...
+...                            ^~~
+/Users/gavrilchik/Development/Flatiron/mod2/labs/Rails/rails-form_for-lab-houston-web-012720/app/views/students/show.html.erb:4: syntax error, unexpected ',', expecting end
+...l: edit_student_path(@student), method: :get do |f| @output_...
+...                              ^
+/Users/gavrilchik/Development/Flatiron/mod2/labs/Rails/rails-form_for-lab-houston-web-012720/app/views/students/show.html.erb:7: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/students/show.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting end
+app/views/students/show.html.erb:4: syntax error, unexpected ',', expecting end
+app/views/students/show.html.erb:7: syntax error, unexpected ensure, expecting end-of-input
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.5ms)
+Started GET "/students/1" for ::1 at 2020-02-25 14:33:20 -0600
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (15.3ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `form_with' for #<#<Class:0x00007fa6c8ce8d28>:0x00007fa6cc018090>
+Did you mean?  form_tag):
+    1: <h1>Student Info:</h1>
+    2: <label> Name: <%=@student.first_name%> <%=@student.last_name%></label>
+    3: 
+    4: <%= form_with model: @student, url: edit_student_path(@student), method: :get do |f| %>
+    5:   <%= f.submit "Edit Student" %>
+    6: <% end %>
+  
+app/views/students/show.html.erb:4:in `_app_views_students_show_html_erb___2612992321174694989_70177181975720'
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.2ms)
+Started GET "/students/1" for ::1 at 2020-02-25 14:33:31 -0600
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for #<Hash:0x00007fa6c5521958>):
+    1: <h1>Student Info:</h1>
+    2: <label> Name: <%=@student.first_name%> <%=@student.last_name%></label>
+    3: 
+    4: <%= form_for model: @student, url: edit_student_path(@student), method: :get do |f| %>
+    5:   <%= f.submit "Edit Student" %>
+    6: <% end %>
+  
+app/views/students/show.html.erb:4:in `_app_views_students_show_html_erb___2612992321174694989_70177125860760'
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.6ms)
+Started GET "/students/1" for ::1 at 2020-02-25 14:33:57 -0600
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/students/1" for ::1 at 2020-02-25 14:37:35 -0600
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `edit_student' for #<#<Class:0x00007fa6c8ce8d28>:0x00007fa6c5d20938>
+Did you mean?  edit_student_url):
+    1: <h1>Student Info:</h1>
+    2: <label> Name: <%=@student.first_name%> <%=@student.last_name%></label>
+    3: 
+    4: <%= form_for(@student, url: edit_student(@student), method: :get) do |f| %>
+    5:   <%= f.submit "Edit Student" %>
+    6: <% end %>
+  
+app/views/students/show.html.erb:4:in `_app_views_students_show_html_erb___2612992321174694989_70177130088640'
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.3ms)
+Started GET "/students/1" for ::1 at 2020-02-25 14:37:55 -0600
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/students/1/edit?utf8=%E2%9C%93&commit=Edit+Student" for ::1 at 2020-02-25 14:37:58 -0600
+Processing by StudentsController#edit as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Edit Student", "id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/edit.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/students/1" for ::1 at 2020-02-25 14:38:45 -0600
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (18.1ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `delete_student_path' for #<#<Class:0x00007fa6c8ce8d28>:0x00007fa6c3fecad8>
+Did you mean?  edit_student_path):
+     5:   <%= f.submit "Edit Student" %>
+     6: <% end %>
+     7: 
+     8: <%= form_for(@student, url: delete_student_path(@student), method: :delete) do |f| %>
+     9:   <%= f.submit "Delete Student" %>
+    10: <% end %>
+  
+app/views/students/show.html.erb:8:in `_app_views_students_show_html_erb___2612992321174694989_70177114778000'
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.6ms)
+Started GET "/students/1" for ::1 at 2020-02-25 14:40:02 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 250ms (Views: 236.8ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/students/1" for ::1 at 2020-02-25 14:40:09 -0600
+Processing by StudentsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZBiB1gtIxrkn0X1XL1JM6+Qh+rw52TJkqIAuQoKxGhW2dX3wojwHu9Q0Z1p0x04hJeP2wgcgKkYUptz4ZWj0Yg==", "commit"=>"Delete Student", "id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/students
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/students" for ::1 at 2020-02-25 14:40:09 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students/3" for ::1 at 2020-02-25 14:40:11 -0600
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/students/3" for ::1 at 2020-02-25 14:40:11 -0600
+Processing by StudentsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3q3GAhdNlxYBahC1muG+IouDCIe+HLfK2JL8ev5fDmwMwDokvjlWFPKPCrjBdLzoSkEE+YDlr+hktA7AGYbgGw==", "commit"=>"Delete Student", "id"=>"3"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/students
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/students" for ::1 at 2020-02-25 14:40:11 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/students" for ::1 at 2020-02-25 14:40:33 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students/2" for ::1 at 2020-02-25 14:40:34 -0600
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/students/11" for ::1 at 2020-02-25 14:40:39 -0600
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/students/2" for ::1 at 2020-02-25 14:43:41 -0600
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/students/2/edit?utf8=%E2%9C%93&commit=Edit+Student" for ::1 at 2020-02-25 14:43:42 -0600
+Processing by StudentsController#edit as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Edit Student", "id"=>"2"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (881.1ms)
+  Rendered students/edit.html.erb within layouts/application (882.5ms)
+Completed 200 OK in 895ms (Views: 893.3ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/students/2" for ::1 at 2020-02-25 14:43:57 -0600
+Processing by StudentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Migg1xl00QArEy2TSztTsqeasHku+THJMSN5JUdyDNbgRdzxsAAQAtj2N54QrlF4Zli8BxAAKeuNBYufoKvioQ==", "student"=>{"first_name"=>"Marge", "last_name"=>"Simpson"}, "commit"=>"Update Student", "id"=>"2"}
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "students" SET "first_name" = ?, "last_name" = ?, "updated_at" = ? WHERE "students"."id" = ?[0m  [["first_name", "Marge"], ["last_name", "Simpson"], ["updated_at", "2020-02-25 20:43:57.988126"], ["id", 2]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 2.8ms)
+
+
+  
+NameError (undefined local variable or method `student' for #<StudentsController:0x00007fa80a9f3ad0>
+Did you mean?  @student):
+  
+app/controllers/students_controller.rb:28:in `update'
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.7ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.6ms)
+Started PATCH "/students/2" for ::1 at 2020-02-25 14:44:27 -0600
+Processing by StudentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Migg1xl00QArEy2TSztTsqeasHku+THJMSN5JUdyDNbgRdzxsAAQAtj2N54QrlF4Zli8BxAAKeuNBYufoKvioQ==", "student"=>{"first_name"=>"Marge", "last_name"=>"Simpson"}, "commit"=>"Update Student", "id"=>"2"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/students/2
+Completed 302 Found in 9ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/students/2" for ::1 at 2020-02-25 14:44:27 -0600
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/students/2" for ::1 at 2020-02-25 14:45:14 -0600
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/students/2" for ::1 at 2020-02-25 14:45:23 -0600
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/students?utf8=%E2%9C%93&commit=Return" for ::1 at 2020-02-25 14:45:25 -0600
+Processing by StudentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Return"}
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 20ms (Views: 16.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/students/2" for ::1 at 2020-02-25 14:45:26 -0600
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/students?utf8=%E2%9C%93&commit=Return" for ::1 at 2020-02-25 14:45:27 -0600
+Processing by StudentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Return"}
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students?utf8=%E2%9C%93&commit=Return" for ::1 at 2020-02-25 14:46:14 -0600
+Processing by StudentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Return"}
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (38.4ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_students_path' for #<#<Class:0x00007fa808fa19e8>:0x00007fa80a5dd810>
+Did you mean?  new_student_path
+               new_student_url):
+    1: <h1>All Students list</h1>
+    2: <br>
+    3: <%= form_for(@student, url: new_students_path, method: :get) do |f| %>
+    4:   <%= f.submit "Create New" %>
+    5: <% end %>
+    6: <br>
+  
+app/views/students/index.html.erb:3:in `_app_views_students_index_html_erb___3789880346212844209_70179852578860'
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.5ms)
+Started GET "/students?utf8=%E2%9C%93&commit=Return" for ::1 at 2020-02-25 14:46:47 -0600
+Processing by StudentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Return"}
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>All Students list</h1>
+    2: <br>
+    3: <%= form_for(@student, url: new_student_path, method: :get) do |f| %>
+    4:   <%= f.submit "Create New" %>
+    5: <% end %>
+    6: <br>
+  
+app/views/students/index.html.erb:3:in `_app_views_students_index_html_erb___3789880346212844209_70179847001160'
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.6ms)
+Started GET "/students?utf8=%E2%9C%93&commit=Return" for ::1 at 2020-02-25 14:46:48 -0600
+Processing by StudentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Return"}
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>All Students list</h1>
+    2: <br>
+    3: <%= form_for(@student, url: new_student_path, method: :get) do |f| %>
+    4:   <%= f.submit "Create New" %>
+    5: <% end %>
+    6: <br>
+  
+app/views/students/index.html.erb:3:in `_app_views_students_index_html_erb___3789880346212844209_70179841085220'
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.1ms)
+Started GET "/students?utf8=%E2%9C%93&commit=Return" for ::1 at 2020-02-25 14:47:01 -0600
+Processing by StudentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Return"}
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for {:url=>"/students/new", :method=>:get}:Hash):
+    1: <h1>All Students list</h1>
+    2: <br>
+    3: <%= form_for( url: new_student_path, method: :get) do |f| %>
+    4:   <%= f.submit "Create New" %>
+    5: <% end %>
+    6: <br>
+  
+app/views/students/index.html.erb:3:in `_app_views_students_index_html_erb___3789880346212844209_70179845590880'
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.8ms)
+Started GET "/students?utf8=%E2%9C%93&commit=Return" for ::1 at 2020-02-25 14:47:02 -0600
+Processing by StudentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Return"}
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for {:url=>"/students/new", :method=>:get}:Hash):
+    1: <h1>All Students list</h1>
+    2: <br>
+    3: <%= form_for( url: new_student_path, method: :get) do |f| %>
+    4:   <%= f.submit "Create New" %>
+    5: <% end %>
+    6: <br>
+  
+app/views/students/index.html.erb:3:in `_app_views_students_index_html_erb___3789880346212844209_70179847314560'
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.3ms)
+Started GET "/students?utf8=%E2%9C%93&commit=Return" for ::1 at 2020-02-25 14:47:23 -0600
+Processing by StudentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Return"}
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (unknown attribute 'url' for Student.):
+    1: <h1>All Students list</h1>
+    2: <br>
+    3: <%= form_for(Student.new url: new_student_path, method: :get) do |f| %>
+    4:   <%= f.submit "Create New" %>
+    5: <% end %>
+    6: <br>
+  
+app/views/students/index.html.erb:3:in `_app_views_students_index_html_erb___3789880346212844209_70179852139020'
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.9ms)
+Started GET "/students?utf8=%E2%9C%93&commit=Return" for ::1 at 2020-02-25 14:47:24 -0600
+Processing by StudentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Return"}
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (unknown attribute 'url' for Student.):
+    1: <h1>All Students list</h1>
+    2: <br>
+    3: <%= form_for(Student.new url: new_student_path, method: :get) do |f| %>
+    4:   <%= f.submit "Create New" %>
+    5: <% end %>
+    6: <br>
+  
+app/views/students/index.html.erb:3:in `_app_views_students_index_html_erb___3789880346212844209_70179839429600'
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.3ms)
+Started GET "/students?utf8=%E2%9C%93&commit=Return" for ::1 at 2020-02-25 14:47:36 -0600
+Processing by StudentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Return"}
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students/new?utf8=%E2%9C%93&commit=Create+New" for ::1 at 2020-02-25 14:47:44 -0600
+Processing by StudentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Create New"}
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (1.9ms)
+  Rendered students/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/new?utf8=%E2%9C%93&commit=Create+New" for ::1 at 2020-02-25 14:48:07 -0600
+Processing by StudentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Create New"}
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (1.4ms)
+  Rendered students/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/students" for ::1 at 2020-02-25 14:48:12 -0600
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XlGiasYrI797zywW3RrjdMKnK+T3lhS3WQ13pW1nE7KMPF5Mb1/ivYgqNhuGj+G+A2UnmslvDJXlK4Ufir79xQ==", "student"=>{"first_name"=>"Marge", "last_name"=>"Simpson"}, "commit"=>"Create Student"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Marge"], ["last_name", "Simpson"], ["created_at", "2020-02-25 20:48:12.988158"], ["updated_at", "2020-02-25 20:48:12.988158"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/students/41
+Completed 302 Found in 5ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/students/41" for ::1 at 2020-02-25 14:48:12 -0600
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 17ms (Views: 13.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students?utf8=%E2%9C%93&commit=Return" for ::1 at 2020-02-25 14:48:15 -0600
+Processing by StudentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Return"}
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students" for ::1 at 2020-02-25 15:04:14 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 92ms (Views: 88.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/school_classes" for ::1 at 2020-02-25 15:04:20 -0600
+Processing by SchoolClassesController#index as HTML
+  Rendering school_classes/index.html.erb within layouts/application
+  Rendered school_classes/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>All School Classes</h1>
+    2: 
+    3: <%@school_classes.each { |school_class|%>
+    4:   <%= link_to  school_class.title, school_class_path(school_class) %>
+    5: <%}%>
+  
+app/views/school_classes/index.html.erb:3:in `_app_views_school_classes_index_html_erb__1639025356713145564_70179845756960'
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.6ms)
+Started GET "/school_classes" for ::1 at 2020-02-25 15:04:39 -0600
+Processing by SchoolClassesController#index as HTML
+  Rendering school_classes/index.html.erb within layouts/application
+  [1m[36mSchoolClass Load (0.3ms)[0m  [1m[34mSELECT "school_classes".* FROM "school_classes"[0m
+  Rendered school_classes/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 22ms (Views: 17.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/school_classes/1" for ::1 at 2020-02-25 15:04:49 -0600
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSchoolClass Load (0.2ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering school_classes/show.html.erb within layouts/application
+  Rendered school_classes/show.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <h1>School class</h1>
+    2: <label>Title: <%=@class.title%></label> 
+    3: <label>Room Number: <%=@class.room_number%></label> 
+  
+app/views/school_classes/show.html.erb:2:in `_app_views_school_classes_show_html_erb__180562798133344769_70179840594960'
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.0ms)
+Started GET "/school_classes/1" for ::1 at 2020-02-25 15:05:25 -0600
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering school_classes/show.html.erb within layouts/application
+  Rendered school_classes/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/school_classes" for ::1 at 2020-02-25 15:05:29 -0600
+Processing by SchoolClassesController#index as HTML
+  Rendering school_classes/index.html.erb within layouts/application
+  [1m[36mSchoolClass Load (0.3ms)[0m  [1m[34mSELECT "school_classes".* FROM "school_classes"[0m
+  Rendered school_classes/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/school_classes/3" for ::1 at 2020-02-25 15:05:30 -0600
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering school_classes/show.html.erb within layouts/application
+  Rendered school_classes/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/school_classes/6" for ::1 at 2020-02-25 15:05:35 -0600
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering school_classes/show.html.erb within layouts/application
+  Rendered school_classes/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/school_classes" for ::1 at 2020-02-25 15:08:27 -0600
+Processing by SchoolClassesController#index as HTML
+  Rendering school_classes/index.html.erb within layouts/application
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT "school_classes".* FROM "school_classes"[0m
+  Rendered school_classes/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/school_classes/5" for ::1 at 2020-02-25 15:08:28 -0600
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering school_classes/show.html.erb within layouts/application
+  Rendered school_classes/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/school_classes?utf8=%E2%9C%93&commit=Return" for ::1 at 2020-02-25 15:08:33 -0600
+Processing by SchoolClassesController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Return"}
+  Rendering school_classes/index.html.erb within layouts/application
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT "school_classes".* FROM "school_classes"[0m
+  Rendered school_classes/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/school_classes/3" for ::1 at 2020-02-25 15:08:35 -0600
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering school_classes/show.html.erb within layouts/application
+  Rendered school_classes/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/school_classes/3/edit?utf8=%E2%9C%93&commit=Edit+Class" for ::1 at 2020-02-25 15:08:36 -0600
+Processing by SchoolClassesController#edit as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Edit Class", "id"=>"3"}
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering school_classes/edit.html.erb within layouts/application
+  Rendered school_classes/edit.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 16.4ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/school_classes/3" for ::1 at 2020-02-25 15:08:43 -0600
+Processing by SchoolClassesController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WXxNpzkaLOskVL3NTKn8YjF90WKSJVN9EUiup1y++4SLEbGBkG7t6dexp8AXPP6o8L/dHKzcS1+tblwdu2cV8w==", "commit"=>"Delete Class", "id"=>"3"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/school_classes_controller.rb:32:in `destroy'
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.8ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.4ms)
+Started GET "/school_classes/3" for ::1 at 2020-02-25 15:09:30 -0600
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering school_classes/show.html.erb within layouts/application
+  Rendered school_classes/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/school_classes?utf8=%E2%9C%93&commit=Return" for ::1 at 2020-02-25 15:09:33 -0600
+Processing by SchoolClassesController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Return"}
+  Rendering school_classes/index.html.erb within layouts/application
+  Rendered school_classes/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>All School Classes</h1>
+    2: <%= form_for(@school_class, url: new_school_class_path(@school_class), method: :get)  do |f| %>
+    3:   <%= f.submit "New Class"%>
+    4: <% end %>
+    5: <br>
+  
+app/views/school_classes/index.html.erb:2:in `_app_views_school_classes_index_html_erb__1639025356713145564_70179851665080'
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.9ms)
+Started GET "/school_classes?utf8=%E2%9C%93&commit=Return" for ::1 at 2020-02-25 15:09:56 -0600
+Processing by SchoolClassesController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Return"}
+  Rendering school_classes/index.html.erb within layouts/application
+  Rendered school_classes/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (Unable to autoload constant School_class, expected /Users/gavrilchik/Development/Flatiron/mod2/labs/Rails/rails-form_for-lab-houston-web-012720/app/models/school_class.rb to define it):
+  
+app/views/school_classes/index.html.erb:2:in `_app_views_school_classes_index_html_erb__1639025356713145564_70179790661580'
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.2ms)
+Started GET "/school_classes?utf8=%E2%9C%93&commit=Return" for ::1 at 2020-02-25 15:10:07 -0600
+Processing by SchoolClassesController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Return"}
+  Rendering school_classes/index.html.erb within layouts/application
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT "school_classes".* FROM "school_classes"[0m
+  Rendered school_classes/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/school_classes/new?utf8=%E2%9C%93&commit=New+Class" for ::1 at 2020-02-25 15:10:10 -0600
+Processing by SchoolClassesController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Class"}
+  Rendering school_classes/new.html.erb within layouts/application
+  Rendered school_classes/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/school_classes/2" for ::1 at 2020-02-25 15:10:15 -0600
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering school_classes/show.html.erb within layouts/application
+  Rendered school_classes/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/school_classes/2" for ::1 at 2020-02-25 15:10:17 -0600
+Processing by SchoolClassesController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DVcOwr3j//8HXW3DyQ4+ewsifw8A36Qnz6lmE7Gsg0XfOvLkFJc+/fS4d86SmzyxyuBzcT4mvAVzj5SpVnVtMg==", "commit"=>"Delete Class", "id"=>"2"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/school_classes_controller.rb:32:in `destroy'
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.6ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.8ms)
+Started DELETE "/school_classes/2" for ::1 at 2020-02-25 15:10:41 -0600
+Processing by SchoolClassesController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"abGEmA6jbPRGjDdmET1H0n2+/mlGxKFHtDyTcYBZvCe73Hi+p9et9rVpLWtKqEUYvHzyF3g9uWUIGmHLZ4BSUA==", "commit"=>"Delete Class", "id"=>"2"}
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "school_classes" WHERE "school_classes"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.7ms)
+
+
+  
+NameError (undefined local variable or method `school_clases_path' for #<SchoolClassesController:0x00007fa80ac5d398>
+Did you mean?  school_class_path
+               school_classes_path
+               school_class_url
+               school_classes_url):
+  
+app/controllers/school_classes_controller.rb:33:in `destroy'
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.8ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.2ms)
+Started GET "/school_classes?utf8=%E2%9C%93&commit=Return" for ::1 at 2020-02-25 15:11:01 -0600
+Processing by SchoolClassesController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Return"}
+  Rendering school_classes/index.html.erb within layouts/application
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT "school_classes".* FROM "school_classes"[0m
+  Rendered school_classes/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 19ms (Views: 15.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/school_classes?utf8=%E2%9C%93&commit=Return" for ::1 at 2020-02-25 15:11:02 -0600
+Processing by SchoolClassesController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Return"}
+  Rendering school_classes/index.html.erb within layouts/application
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT "school_classes".* FROM "school_classes"[0m
+  Rendered school_classes/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/school_classes/7" for ::1 at 2020-02-25 15:11:04 -0600
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSchoolClass Load (0.2ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering school_classes/show.html.erb within layouts/application
+  Rendered school_classes/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/school_classes/7" for ::1 at 2020-02-25 15:11:05 -0600
+Processing by SchoolClassesController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QLCky43ARCrWEy4HOIoOkrJFCtHjuiqzPd86/zQy47WS3VjtJLSFKCX2NApjHwxYc4cGr91DMpGB+chF0+sNwg==", "commit"=>"Delete Class", "id"=>"7"}
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "school_classes" WHERE "school_classes"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/school_classes
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/school_classes" for ::1 at 2020-02-25 15:11:05 -0600
+Processing by SchoolClassesController#index as HTML
+  Rendering school_classes/index.html.erb within layouts/application
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT "school_classes".* FROM "school_classes"[0m
+  Rendered school_classes/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/school_classes" for ::1 at 2020-02-25 15:15:44 -0600
+Processing by SchoolClassesController#index as HTML
+  Rendering school_classes/index.html.erb within layouts/application
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT "school_classes".* FROM "school_classes"[0m
+  Rendered school_classes/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/school_classes/new?utf8=%E2%9C%93&commit=New+Class" for ::1 at 2020-02-25 15:15:47 -0600
+Processing by SchoolClassesController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Class"}
+  Rendering school_classes/new.html.erb within layouts/application
+  Rendered school_classes/_form.html.erb (0.3ms)
+  Rendered school_classes/new.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/gavrilchik/Development/Flatiron/mod2/labs/Rails/rails-form_for-lab-houston-web-012720/app/views/school_classes/_form.html.erb:3: syntax error, unexpected ',', expecting ')'
+...( f.number_field (:room_number, in: ${1..500}, step: ${1}) )...
+...                              ^
+/Users/gavrilchik/Development/Flatiron/mod2/labs/Rails/rails-form_for-lab-houston-web-012720/app/views/school_classes/_form.html.erb:3: `${' is not allowed as a global variable name):
+  
+app/views/school_classes/_form.html.erb:3: syntax error, unexpected ',', expecting ')'
+app/views/school_classes/_form.html.erb:3: `${' is not allowed as a global variable name
+app/views/school_classes/new.html.erb:2:in `_app_views_school_classes_new_html_erb___2686340695533162488_70179847752500'
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (25.6ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (38.9ms)
+Started GET "/school_classes/new?utf8=%E2%9C%93&commit=New+Class" for ::1 at 2020-02-25 15:16:41 -0600
+Processing by SchoolClassesController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Class"}
+  Rendering school_classes/new.html.erb within layouts/application
+  Rendered school_classes/_form.html.erb (0.4ms)
+  Rendered school_classes/new.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/gavrilchik/Development/Flatiron/mod2/labs/Rails/rails-form_for-lab-houston-web-012720/app/views/school_classes/_form.html.erb:3: `${' is not allowed as a global variable name
+/Users/gavrilchik/Development/Flatiron/mod2/labs/Rails/rails-form_for-lab-houston-web-012720/app/views/school_classes/_form.html.erb:3: syntax error, unexpected end-of-input
+...umber_field(:room_number, in: ${1..500}, step: ${1}) );@outp...
+...                              ^):
+  
+app/views/school_classes/_form.html.erb:3: `${' is not allowed as a global variable name
+app/views/school_classes/_form.html.erb:3: syntax error, unexpected end-of-input
+app/views/school_classes/new.html.erb:2:in `_app_views_school_classes_new_html_erb___2686340695533162488_70179797228480'
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/gavrilchik/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.0ms)
+Started GET "/school_classes/new?utf8=%E2%9C%93&commit=New+Class" for ::1 at 2020-02-25 15:17:17 -0600
+Processing by SchoolClassesController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Class"}
+  Rendering school_classes/new.html.erb within layouts/application
+  Rendered school_classes/_form.html.erb (4.3ms)
+  Rendered school_classes/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/school_classes" for ::1 at 2020-02-25 15:17:32 -0600
+Processing by SchoolClassesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YjHYnvleM1lEDnjZuh5wW8L1BnAMtuM8k+FNdgA/UeCwXCS4UCryW7frYtThi3KRAzcKDjJP+x4vx7/M5+a/lw==", "school_class"=>{"title"=>"wecwec", "room_number"=>"1334"}, "commit"=>"Create School class"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "school_classes" ("title", "room_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "wecwec"], ["room_number", 1334], ["created_at", "2020-02-25 21:17:32.788442"], ["updated_at", "2020-02-25 21:17:32.788442"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/school_classes/8
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/school_classes/8" for ::1 at 2020-02-25 15:17:32 -0600
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering school_classes/show.html.erb within layouts/application
+  Rendered school_classes/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/school_classes?utf8=%E2%9C%93&commit=Return" for ::1 at 2020-02-25 15:17:35 -0600
+Processing by SchoolClassesController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Return"}
+  Rendering school_classes/index.html.erb within layouts/application
+  [1m[36mSchoolClass Load (0.2ms)[0m  [1m[34mSELECT "school_classes".* FROM "school_classes"[0m
+  Rendered school_classes/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/school_classes/new?utf8=%E2%9C%93&commit=New+Class" for ::1 at 2020-02-25 15:17:36 -0600
+Processing by SchoolClassesController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Class"}
+  Rendering school_classes/new.html.erb within layouts/application
+  Rendered school_classes/_form.html.erb (1.3ms)
+  Rendered school_classes/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/school_classes" for ::1 at 2020-02-25 15:17:43 -0600
+Processing by SchoolClassesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W8qjY8xyrJRwwQjcx95vWWc44Ilk/yF1lv++/M2fvxqJp19FZQZtloMkEtGcS22Tpvrs91oGOVcq2UxGKkZRbQ==", "school_class"=>{"title"=>"wdf", "room_number"=>"333"}, "commit"=>"Create School class"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "school_classes" ("title", "room_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "wdf"], ["room_number", 333], ["created_at", "2020-02-25 21:17:43.107837"], ["updated_at", "2020-02-25 21:17:43.107837"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/school_classes/9
+Completed 302 Found in 5ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/school_classes/9" for ::1 at 2020-02-25 15:17:43 -0600
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering school_classes/show.html.erb within layouts/application
+  Rendered school_classes/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/school_classes/9/edit?utf8=%E2%9C%93&commit=Edit+Class" for ::1 at 2020-02-25 15:17:45 -0600
+Processing by SchoolClassesController#edit as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Edit Class", "id"=>"9"}
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering school_classes/edit.html.erb within layouts/application
+  Rendered school_classes/_form.html.erb (1.8ms)
+  Rendered school_classes/edit.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 18ms (Views: 15.0ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/school_classes/9" for ::1 at 2020-02-25 15:17:52 -0600
+Processing by SchoolClassesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UQuklU3D8h3n4XxwiJ82tHTZihuISNV9UYnRzJAtjReDZliz5LczHxQEZn3TCjR+tRuGZbaxzV/tryN2d/RjYA==", "school_class"=>{"title"=>"wdf", "room_number"=>"334"}, "commit"=>"Update School class", "id"=>"9"}
+  [1m[36mSchoolClass Load (0.2ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "school_classes" SET "room_number" = ?, "updated_at" = ? WHERE "school_classes"."id" = ?[0m  [["room_number", 334], ["updated_at", "2020-02-25 21:17:52.018158"], ["id", 9]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/school_classes/9
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/school_classes/9" for ::1 at 2020-02-25 15:17:52 -0600
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering school_classes/show.html.erb within layouts/application
+  Rendered school_classes/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/school_classes?utf8=%E2%9C%93&commit=Return" for ::1 at 2020-02-25 15:17:53 -0600
+Processing by SchoolClassesController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Return"}
+  Rendering school_classes/index.html.erb within layouts/application
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT "school_classes".* FROM "school_classes"[0m
+  Rendered school_classes/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.1ms)
+
+

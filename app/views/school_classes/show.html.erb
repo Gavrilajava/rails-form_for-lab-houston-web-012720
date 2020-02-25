@@ -1,0 +1,15 @@
+<h1>School class</h1>
+<label>Title: <%=@school_class.title%></label> 
+<label>Room Number: <%=@school_class.room_number%></label> 
+
+<%= form_for(@school_class, url: edit_school_class_path(@school_class), method: :get)  do |f| %>
+  <%= f.submit "Edit Class"%>
+<% end %>
+
+<%= form_for(@school_class, url: school_class_path(@school_class), method: :delete)  do |f| %>
+  <%= f.submit "Delete Class"%>
+<% end %>
+
+<%= form_for(@school_class, url: school_classes_path, method: :get)  do |f| %>
+  <%= f.submit "Return"%>
+<% end %>

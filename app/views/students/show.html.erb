@@ -1,0 +1,14 @@
+<h1>Student Info:</h1>
+<label> Name: <%=@student.first_name%> <%=@student.last_name%></label>
+
+<%= form_for(@student, url: edit_student_path(@student), method: :get) do |f| %>
+  <%= f.submit "Edit Student" %>
+<% end %>
+<br>
+<%= form_for(@student, url: student_path(@student), method: :delete) do |f| %>
+  <%= f.submit "Delete Student" %>
+<% end %>
+<br>
+<%= form_for(@student, url: students_path, method: :get) do |f| %>
+  <%= f.submit "Return" %>
+<% end %>

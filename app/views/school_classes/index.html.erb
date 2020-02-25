@@ -1,0 +1,8 @@
+<h1>All School Classes</h1>
+<%= form_for(SchoolClass.new, url: new_school_class_path(@school_class), method: :get)  do |f| %>
+  <%= f.submit "New Class"%>
+<% end %>
+<br>
+<%@school_classes.each { |school_class|%>
+  <%= link_to  school_class.title, school_class_path(school_class) %>
+<%}%>
